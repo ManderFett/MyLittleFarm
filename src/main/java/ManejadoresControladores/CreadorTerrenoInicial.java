@@ -15,6 +15,7 @@ public class CreadorTerrenoInicial {
         Celda[][] celda = new Celda[5][5];
         ProbabilidadCeldas tipoDeCelda = new ProbabilidadCeldas();
         TipoDeCelda celdaRandom = tipoDeCelda.dibujarRandom();
+        ManejadorOpciones manejadorOpciones = new ManejadorOpciones();
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 String tipoCelda = tipoDeCelda.dibujarRandom().toString();
@@ -23,7 +24,6 @@ public class CreadorTerrenoInicial {
                     @Override
                     public void mouseClicked(java.awt.event.MouseEvent evt) {
                         CeldaJButton opcionDeCelda = (CeldaJButton) evt.getComponent();
-                        ManejadorOpciones manejadorOpciones = new ManejadorOpciones();
                         manejadorOpciones.opcionesDeCelda(opcionDeCelda, celdaRandom);
                     }
                 });

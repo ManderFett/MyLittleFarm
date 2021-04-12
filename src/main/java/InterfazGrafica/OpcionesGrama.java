@@ -14,6 +14,7 @@ import ManejadoresControladores.ProbabilidadCeldas;
 public class OpcionesGrama extends javax.swing.JFrame {
 
     ManejadorOpciones manejadorOpciones;
+    ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
 
     /**
      * Creates new form NewJFrame
@@ -21,15 +22,14 @@ public class OpcionesGrama extends javax.swing.JFrame {
     public OpcionesGrama(CeldaJButton celdaCliqueada, TipoDeCelda tipoDeCelda) {
         initComponents();
         this.setLocation(430, 480);
-        ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
-        manejadorImagenes.cambiarImagenGramaCerdito(cerditoItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaGallina(galiinaItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaOveja(ovejaItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaVaca(vacaItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaMaiz(maizItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaManzana(manzanaItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaTomate(tomateItem, tipoDeCelda, celdaCliqueada);
-        manejadorImagenes.cambiarImagenGramaZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaCerdito(cerditoItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaGallina(galiinaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaOveja(ovejaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaVaca(vacaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaMaiz(maizItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaManzana(manzanaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaTomate(tomateItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorImagenes.cambiarImagenGramaZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
     }
 
     /**

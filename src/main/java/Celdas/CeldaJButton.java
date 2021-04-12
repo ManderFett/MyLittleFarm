@@ -19,7 +19,6 @@ public class CeldaJButton extends JButton {
     private int numeroFila;
     private int numeroColumna;
     private String tipoCelda;
-    private JFrame ventanaOpciones;
     private Icon icon;
 
     public CeldaJButton(int numeroFila, int numeroColumna, String tipoCelda, Icon icon) {
