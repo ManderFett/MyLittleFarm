@@ -10,7 +10,7 @@ public class Agua extends TipoDeCelda {
 
     private boolean pescarCelda;
     private String Agua;
-    ImageIcon imagenCelda = new ImageIcon(getClass().getResource("/Imagenes/CeldaAgua.png"));
+    protected ImageIcon imagenCelda = new ImageIcon(getClass().getResource("/Imagenes/CeldaAgua.png"));
 
     public Agua(boolean pescarCelda, String Agua, String nombre) {
         super(nombre);
@@ -38,9 +38,17 @@ public class Agua extends TipoDeCelda {
         this.Agua = Agua;
     }
 
+    public void setImagenCelda(ImageIcon imagenCelda) {
+        this.imagenCelda = imagenCelda;
+    }
+
     @Override
     public String toString() {
         return "Agua";
+    }
+    
+    public ImageIcon remplazarImagen(){
+        return this.imagenCelda;
     }
 
 }

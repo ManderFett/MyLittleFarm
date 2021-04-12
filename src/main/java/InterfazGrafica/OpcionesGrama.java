@@ -1,6 +1,7 @@
 package InterfazGrafica;
 
 import Celdas.Agua;
+import Celdas.CeldaJButton;
 import Celdas.TipoDeCelda;
 import ManejadoresControladores.ManejadorOpciones;
 import ManejadoresControladores.ProbabilidadCeldas;
@@ -16,10 +17,10 @@ public class OpcionesGrama extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    public OpcionesGrama() {
+    public OpcionesGrama(CeldaJButton celdaCliqueada, TipoDeCelda tipoDeCelda) {
         initComponents();
         this.setLocation(430, 480);
-
+        
     }
 
     /**

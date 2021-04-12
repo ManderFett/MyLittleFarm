@@ -10,10 +10,7 @@ import Celdas.TipoDeCelda;
 import InterfazGrafica.OpcionesAgua;
 import InterfazGrafica.OpcionesDesierto;
 import InterfazGrafica.OpcionesGrama;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 /**
  *
@@ -21,26 +18,26 @@ import javax.swing.JLabel;
  */
 public class ManejadorOpciones {
 
-    OpcionesGrama opcionesGrama = new OpcionesGrama();
-    OpcionesAgua opcionesAgua = new OpcionesAgua();
-    OpcionesDesierto opcionesDesierto = new OpcionesDesierto();
-
-    private CeldaJButton celdaCliqueada;
-
+//    private CeldaJButton celdaCliqueada;
+//    private TipoDeCelda tipoDeCelda;
+//    private Celda celdaTerreno;
     public ManejadorOpciones() {
-
     }
 
-    public JFrame opcionesDeCelda(CeldaJButton celdaCliqueada) {
-        if (celdaCliqueada.getTipoCelda().equals("Grama")) {
-            opcionesGrama.setVisible(true);
-            return opcionesGrama;
-        } else if (celdaCliqueada.getTipoCelda().equals("Agua")) {
-            opcionesAgua.setVisible(true);
-            return opcionesAgua;
-        } else {
-            opcionesDesierto.setVisible(true);
-            return opcionesDesierto;
+    public JFrame opcionesDeCelda(CeldaJButton celdaCliqueada, TipoDeCelda celdaRandom) {
+        switch (celdaCliqueada.getTipoCelda()) {
+            case "Grama":
+                OpcionesGrama opcionesGrama = new OpcionesGrama(celdaCliqueada, celdaRandom);
+                opcionesGrama.setVisible(true);
+                return opcionesGrama;
+            case "Agua":
+                OpcionesAgua opcionesAgua = new OpcionesAgua(celdaCliqueada, celdaRandom);
+                opcionesAgua.setVisible(true);
+                return opcionesAgua;
+            default:
+                OpcionesDesierto opcionesDesierto = new OpcionesDesierto(celdaCliqueada, celdaRandom);
+                opcionesDesierto.setVisible(true);
+                return opcionesDesierto;
         }
     }
 

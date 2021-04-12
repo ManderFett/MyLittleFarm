@@ -53,4 +53,15 @@ public class CeldaJButton extends JButton {
         this.tipoCelda = tipoCelda;
     }
 
+    @Override
+    public Icon getIcon() {
+        return icon;
+    }
+
+    @Override
+    public void setIcon(Icon icon) {
+        this.icon = icon;
+    }
+    
+
 }

@@ -5,6 +5,7 @@ import Celdas.Desierto;
 import Celdas.Grama;
 import Celdas.TipoDeCelda;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -34,8 +35,11 @@ public class ProbabilidadCeldas {
         }
     }
 
+
     public Icon getImagen() {
         return Imagen;
     }
-
+    public void setImagen(ImageIcon imagenCelda) {
+        this.Imagen = imagenCelda;
+    }
 }

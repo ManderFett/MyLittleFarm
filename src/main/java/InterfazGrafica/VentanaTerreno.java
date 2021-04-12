@@ -25,7 +25,7 @@ public class VentanaTerreno extends javax.swing.JFrame {
      */
     public VentanaTerreno(Granjero granjero) {
         initComponents();
-        this.setTitle("My Littel Farm");
+        this.setTitle("My Little Farm");
         this.setLocationRelativeTo(null);
         this.terreno = new Terreno();
         manejadorDeCeldas = new ManejadorDeCeldas(terrenoGranjerojPanel, terreno.getCelda());

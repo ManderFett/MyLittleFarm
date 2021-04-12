@@ -1,23 +1,35 @@
 package InterfazGrafica;
 
 import Celdas.Agua;
+import Celdas.Celda;
+import Celdas.CeldaJButton;
 import Celdas.TipoDeCelda;
+import ManejadoresControladores.ManejadorImagenes;
 import ManejadoresControladores.ManejadorOpciones;
 import ManejadoresControladores.ProbabilidadCeldas;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author Marco Munguia <@markomannder>
  */
 public class OpcionesAgua extends javax.swing.JFrame {
+
     ManejadorOpciones manejadorOpciones;
 
     /**
      * Creates new form NewJFrame
+     *
+     * @param celdaCliqueada
+     * @param tipoDeCelda
      */
-    public OpcionesAgua() {
+    public OpcionesAgua(CeldaJButton celdaCliqueada, TipoDeCelda celdaRandom) {
         initComponents();
         this.setLocation(430, 480);
+        ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
+        manejadorImagenes.cambiarImagen(colocarBotejButton, celdaRandom, celdaCliqueada);
 
     }
 
@@ -34,7 +46,7 @@ public class OpcionesAgua extends javax.swing.JFrame {
         botejLabel = new javax.swing.JLabel();
         imagenBotejLabel = new javax.swing.JLabel();
         imagenVidajLabel = new javax.swing.JLabel();
-        colocarBorejButton = new javax.swing.JButton();
+        colocarBotejButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -56,19 +68,14 @@ public class OpcionesAgua extends javax.swing.JFrame {
         imagenVidajLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagenVida.png"))); // NOI18N
         getContentPane().add(imagenVidajLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 40, 40));
 
-        colocarBorejButton.setBackground(new java.awt.Color(0,0,0,0));
-        colocarBorejButton.setForeground(new java.awt.Color(0, 0, 0));
-        colocarBorejButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoOpcionesBoton.png"))); // NOI18N
-        colocarBorejButton.setText("Colocar Bote Pesquero");
-        colocarBorejButton.setToolTipText("");
-        colocarBorejButton.setBorder(null);
-        colocarBorejButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        colocarBorejButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                colocarBorejButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(colocarBorejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 195, 40));
+        colocarBotejButton.setBackground(new java.awt.Color(0,0,0,0));
+        colocarBotejButton.setForeground(new java.awt.Color(0, 0, 0));
+        colocarBotejButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoOpcionesBoton.png"))); // NOI18N
+        colocarBotejButton.setText("Colocar Bote Pesquero");
+        colocarBotejButton.setToolTipText("");
+        colocarBotejButton.setBorder(null);
+        colocarBotejButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(colocarBotejButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 195, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoOpciones.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 213, 353));
@@ -76,16 +83,13 @@ public class OpcionesAgua extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void colocarBorejButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colocarBorejButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_colocarBorejButtonActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel botejLabel;
-    private javax.swing.JButton colocarBorejButton;
+    private javax.swing.JButton colocarBotejButton;
     private javax.swing.JLabel imagenBotejLabel;
     private javax.swing.JLabel imagenVidajLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel vidaBotejLabel;
     // End of variables declaration//GEN-END:variables
+
 }
