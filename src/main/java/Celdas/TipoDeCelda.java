@@ -37,7 +37,7 @@ public class TipoDeCelda {
         this.iconoCelda = iconoCelda;
     }
 
-    public ImageIcon remplazarImagen() {
+    public ImageIcon remplazarIcono() {
         return this.imagenCelda;
     }
 }

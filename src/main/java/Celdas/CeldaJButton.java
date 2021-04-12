@@ -62,6 +62,5 @@ public class CeldaJButton extends JButton {
     public void setIcon(Icon icon) {
         this.icon = icon;
     }
-    
 
 }

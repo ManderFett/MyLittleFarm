@@ -47,7 +47,8 @@ public class Agua extends TipoDeCelda {
         return "Agua";
     }
     
-    public ImageIcon remplazarImagen(){
+    @Override
+    public ImageIcon remplazarIcono(){
         return this.imagenCelda;
     }
 

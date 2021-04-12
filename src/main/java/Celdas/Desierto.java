@@ -24,4 +24,9 @@ public class Desierto extends TipoDeCelda {
         return "Desierto";
     }
 
+    @Override
+    public ImageIcon remplazarIcono() {
+        return this.imagenCelda;
+    }
+
 }

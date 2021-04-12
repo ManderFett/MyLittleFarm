@@ -21,8 +21,8 @@ public class Grama extends TipoDeCelda {
     public ImageIcon getImagenCelda() {
         return imagenCelda;
     }
-    
-    public ImageIcon setImagenCelda(){
+
+    public ImageIcon setImagenCelda() {
         return imagenCelda;
     }
 
@@ -47,4 +47,8 @@ public class Grama extends TipoDeCelda {
         return "Grama";
     }
 
+    @Override
+    public ImageIcon remplazarIcono() {
+        return this.imagenCelda;
+    }
 }
