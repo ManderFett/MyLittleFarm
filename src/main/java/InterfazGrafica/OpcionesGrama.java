@@ -3,6 +3,7 @@ package InterfazGrafica;
 import Celdas.Agua;
 import Celdas.CeldaJButton;
 import Celdas.TipoDeCelda;
+import ManejadoresControladores.ManejadorImagenes;
 import ManejadoresControladores.ManejadorOpciones;
 import ManejadoresControladores.ProbabilidadCeldas;
 
@@ -20,7 +21,15 @@ public class OpcionesGrama extends javax.swing.JFrame {
     public OpcionesGrama(CeldaJButton celdaCliqueada, TipoDeCelda tipoDeCelda) {
         initComponents();
         this.setLocation(430, 480);
-        
+        ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
+        manejadorImagenes.cambiarImagenGramaCerdito(cerditoItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaGallina(galiinaItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaOveja(ovejaItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaVaca(vacaItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaMaiz(maizItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaManzana(manzanaItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaTomate(tomateItem, tipoDeCelda, celdaCliqueada);
+        manejadorImagenes.cambiarImagenGramaZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada);
     }
 
     /**
@@ -65,7 +74,7 @@ public class OpcionesGrama extends javax.swing.JFrame {
         semillasjPopUp.add(tomateItem);
 
         maizItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagenMaiz.png"))); // NOI18N
-        maizItem.setText("Manzana");
+        maizItem.setText("Maiz");
         semillasjPopUp.add(maizItem);
 
         animalesjPopUp.setInvoker(colocarAnimaljButton);

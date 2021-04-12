@@ -29,7 +29,7 @@ public class OpcionesAgua extends javax.swing.JFrame {
         initComponents();
         this.setLocation(430, 480);
         ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
-        manejadorImagenes.cambiarImagen(colocarBotejButton, celdaRandom, celdaCliqueada);
+        manejadorImagenes.cambiarImagenAgua(colocarBotejButton, celdaRandom, celdaCliqueada);
 
     }
 

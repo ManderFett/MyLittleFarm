@@ -18,9 +18,6 @@ import javax.swing.JFrame;
  */
 public class ManejadorOpciones {
 
-//    private CeldaJButton celdaCliqueada;
-//    private TipoDeCelda tipoDeCelda;
-//    private Celda celdaTerreno;
     public ManejadorOpciones() {
     }
 
