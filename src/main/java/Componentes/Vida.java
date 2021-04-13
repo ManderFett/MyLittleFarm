@@ -17,13 +17,13 @@ import javax.swing.JLabel;
 public class Vida<T> extends Thread {
 
     private T objeto;
-    private JLabel vidaGranjeroLabel;
+    private JLabel vidaObjetojLabel;
     private int vidaObjeto;
     private int vidaRestar;
 
-    public Vida(T granjero, JLabel vidaGranjeroLabel, int vidaObjeto, int vidaRestar) {
+    public Vida(T granjero, JLabel vidaObjetojLabel, int vidaObjeto, int vidaRestar) {
         this.objeto = objeto;
-        this.vidaGranjeroLabel = vidaGranjeroLabel;
+        this.vidaObjetojLabel = vidaObjetojLabel;
         this.vidaObjeto = vidaObjeto;
         this.vidaRestar = vidaRestar;
     }
@@ -32,9 +32,9 @@ public class Vida<T> extends Thread {
     public void run() {
         while ((vidaObjeto <= 100) && (vidaObjeto != 0)) {
             try {
-                Vida.sleep(20000);
+                Vida.sleep(2000);
                 vidaObjeto -= vidaRestar;
-                vidaGranjeroLabel.setText(Integer.toString(vidaObjeto));
+                vidaObjetojLabel.setText(Integer.toString(vidaObjeto));
             } catch (InterruptedException ex) {
                 Logger.getLogger(Vida.class.getName()).log(Level.SEVERE, null, ex);
             }

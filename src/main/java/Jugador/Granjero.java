@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Jugador;
 
 /**
- * 
+ *
  * @author Marco Munguia <@markomannder>
  */
 public class Granjero {
-    
+
     private int vidaJugador;
     private int dineroJugador;
     private String nombreJugador;
@@ -55,7 +54,5 @@ public class Granjero {
     public void setNicknameJugador(String nicknameJugador) {
         this.nicknameJugador = nicknameJugador;
     }
-    
-    
 
 }

@@ -5,14 +5,21 @@
  */
 package Siembra;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author Marco Munguia <@markomannder>
  */
 public class Zanahoria extends Semilla implements SemillaInterface {
 
-    public Zanahoria(int vidaSemilla, String nombreSemilla) {
-        super(vidaSemilla, nombreSemilla);
+    public Zanahoria(int vidaSemilla, int tiempoCosecha, String nombreSemilla) {
+        super(vidaSemilla, tiempoCosecha, nombreSemilla);
+    }
+
+    @Override
+    public void vidaSemilla() {
+        
     }
 
     @Override
@@ -24,11 +31,9 @@ public class Zanahoria extends Semilla implements SemillaInterface {
     }
 
     @Override
-    public void vidaSemilla() {
-    }
-
-    @Override
     public void alimentarSemilla() {
     }
+
+   
 
 }

@@ -1,15 +1,9 @@
 package InterfazGrafica;
 
-import Celdas.Agua;
-import Celdas.Celda;
 import Celdas.CeldaJButton;
 import Celdas.TipoDeCelda;
-import ManejadoresControladores.ManejadorImagenes;
+import ManejadoresControladores.ManejadorBote;
 import ManejadoresControladores.ManejadorOpciones;
-import ManejadoresControladores.ProbabilidadCeldas;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -28,7 +22,7 @@ public class OpcionesAgua extends javax.swing.JFrame {
     public OpcionesAgua(CeldaJButton celdaCliqueada, TipoDeCelda celdaRandom) {
         initComponents();
         this.setLocation(430, 480);
-        ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
+        ManejadorBote manejadorImagenes = new ManejadorBote();
         manejadorImagenes.cambiarImagenAgua(colocarBotejButton, celdaRandom, celdaCliqueada, vidaBotejLabel, botejLabel, imagenBotejLabel);
 
     }
@@ -54,7 +48,6 @@ public class OpcionesAgua extends javax.swing.JFrame {
 
         vidaBotejLabel.setForeground(new java.awt.Color(0, 0, 0));
         vidaBotejLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        vidaBotejLabel.setText("Vida: ");
         getContentPane().add(vidaBotejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 130, 40));
 
         botejLabel.setForeground(new java.awt.Color(0, 0, 0));

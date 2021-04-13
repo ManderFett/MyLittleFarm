@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Animales;
 
 /**
- * 
+ *
  * @author Marco Munguia <@markomannder>
  */
 public class Oveja extends Animal implements AnimalInterface {
 
-    public Oveja(int vidaAnimal, String nombreAnimal) {
-        super(vidaAnimal, nombreAnimal);
+    public Oveja(int vidaAnimal, int tiempoDeCrianza, String nombreAnimal) {
+        super(vidaAnimal, tiempoDeCrianza, nombreAnimal);
     }
 
     @Override

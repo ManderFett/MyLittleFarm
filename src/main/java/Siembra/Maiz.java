@@ -11,8 +11,12 @@ package Siembra;
  */
 public class Maiz extends Semilla implements SemillaInterface {
 
-    public Maiz(int vidaSemilla, String nombreSemilla) {
-        super(vidaSemilla, nombreSemilla);
+    public Maiz(int vidaSemilla, int tiempoCosecha, String nombreSemilla) {
+        super(vidaSemilla, tiempoCosecha, nombreSemilla);
+    }
+
+    @Override
+    public void vidaSemilla() {
     }
 
     @Override
@@ -21,10 +25,6 @@ public class Maiz extends Semilla implements SemillaInterface {
 
     @Override
     public void quitarSemilla() {
-    }
-
-    @Override
-    public void vidaSemilla() {
     }
 
     @Override

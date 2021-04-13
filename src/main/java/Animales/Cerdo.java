@@ -11,8 +11,8 @@ package Animales;
  */
 public class Cerdo extends Animal implements AnimalInterface {
 
-    public Cerdo(int vidaAnimal, String nombreAnimal) {
-        super(vidaAnimal, nombreAnimal);
+    public Cerdo(int vidaAnimal, int tiempoDeCrianza, String nombreAnimal) {
+        super(vidaAnimal, tiempoDeCrianza, nombreAnimal);
     }
 
     @Override

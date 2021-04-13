@@ -11,8 +11,8 @@ package Animales;
  */
 public class Gallina extends Animal implements AnimalInterface {
 
-    public Gallina(int vidaAnimal, String nombreAnimal) {
-        super(vidaAnimal, nombreAnimal);
+    public Gallina(int vidaAnimal, int tiempoDeCrianza, String nombreAnimal) {
+        super(vidaAnimal, tiempoDeCrianza, nombreAnimal);
     }
 
     @Override

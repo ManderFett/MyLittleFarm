@@ -1,11 +1,10 @@
 package InterfazGrafica;
 
-import Celdas.Agua;
 import Celdas.CeldaJButton;
 import Celdas.TipoDeCelda;
-import ManejadoresControladores.ManejadorImagenes;
+import ManejadoresControladores.ManejadorAnimales;
 import ManejadoresControladores.ManejadorOpciones;
-import ManejadoresControladores.ProbabilidadCeldas;
+import ManejadoresControladores.ManejadorSiembras;
 
 /**
  *
@@ -14,7 +13,8 @@ import ManejadoresControladores.ProbabilidadCeldas;
 public class OpcionesGrama extends javax.swing.JFrame {
 
     ManejadorOpciones manejadorOpciones;
-    ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
+    ManejadorAnimales manejadorAnimales = new ManejadorAnimales();
+    ManejadorSiembras manejadorSiembras = new ManejadorSiembras();
 
     /**
      * Creates new form NewJFrame
@@ -22,14 +22,14 @@ public class OpcionesGrama extends javax.swing.JFrame {
     public OpcionesGrama(CeldaJButton celdaCliqueada, TipoDeCelda tipoDeCelda) {
         initComponents();
         this.setLocation(430, 480);
-        manejadorImagenes.cambiarImagenGramaCerdito(cerditoItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaGallina(galiinaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaOveja(ovejaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaVaca(vacaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaMaiz(maizItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaManzana(manzanaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaTomate(tomateItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorImagenes.cambiarImagenGramaZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorAnimales.cambiarImagenGramaCerdito(cerditoItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorAnimales.cambiarImagenGramaGallina(galiinaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorAnimales.cambiarImagenGramaOveja(ovejaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorAnimales.cambiarImagenGramaVaca(vacaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorSiembras.cambiarImagenGramaMaiz(maizItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorSiembras.cambiarImagenGramaManzana(manzanaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorSiembras.cambiarImagenGramaTomate(tomateItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
+        manejadorSiembras.cambiarImagenGramaZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel, textoTiempojLabel, tiempojLabel);
     }
 
     /**
@@ -55,6 +55,8 @@ public class OpcionesGrama extends javax.swing.JFrame {
         nombreObjetojLabel = new javax.swing.JLabel();
         imagenObjerojLabel = new javax.swing.JLabel();
         imagenVidajLabel = new javax.swing.JLabel();
+        textoTiempojLabel = new javax.swing.JLabel();
+        tiempojLabel = new javax.swing.JLabel();
         colocarAnimaljButton = new javax.swing.JButton();
         plantarSemillajButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -100,7 +102,6 @@ public class OpcionesGrama extends javax.swing.JFrame {
 
         vidaObjetojLabel.setForeground(new java.awt.Color(0, 0, 0));
         vidaObjetojLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        vidaObjetojLabel.setText("Vida: ");
         getContentPane().add(vidaObjetojLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 130, 40));
 
         nombreObjetojLabel.setForeground(new java.awt.Color(0, 0, 0));
@@ -110,6 +111,14 @@ public class OpcionesGrama extends javax.swing.JFrame {
 
         imagenVidajLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagenVida.png"))); // NOI18N
         getContentPane().add(imagenVidajLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 40, 40));
+
+        textoTiempojLabel.setForeground(new java.awt.Color(0, 0, 0));
+        textoTiempojLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(textoTiempojLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 160, 20));
+
+        tiempojLabel.setForeground(new java.awt.Color(0, 0, 0));
+        tiempojLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(tiempojLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 30, 40));
 
         colocarAnimaljButton.setBackground(new java.awt.Color(0,0,0,0));
         colocarAnimaljButton.setForeground(new java.awt.Color(0, 0, 0));
@@ -169,6 +178,8 @@ public class OpcionesGrama extends javax.swing.JFrame {
     private javax.swing.JMenuItem ovejaItem;
     private javax.swing.JButton plantarSemillajButton;
     private javax.swing.JPopupMenu semillasjPopUp;
+    private javax.swing.JLabel textoTiempojLabel;
+    private javax.swing.JLabel tiempojLabel;
     private javax.swing.JMenuItem tomateItem;
     private javax.swing.JMenuItem vacaItem;
     private javax.swing.JLabel vidaObjetojLabel;
