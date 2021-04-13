@@ -5,7 +5,9 @@
  */
 package ManejadoresControladores;
 
+import InterfazGrafica.VentanaMyFarm;
 import Jugador.Granjero;
+import javax.swing.JLabel;
 
 /**
  *
@@ -13,15 +15,11 @@ import Jugador.Granjero;
  */
 public class ManejadorGranjero {
 
-    public ManejadorGranjero() {
-    }
-
-    public void recibirGranjero(Granjero granjero) {
-
-    }
-
-    public void datosGranjero(Granjero granjero) {
-
+    public void reiniciarJuego(JLabel vidaGranjero) {
+        if (vidaGranjero.getText().equals("O")) {
+            VentanaMyFarm reiniciarJuego = new VentanaMyFarm();
+            reiniciarJuego.setVisible(true);
+        }
     }
 
 }

@@ -23,7 +23,7 @@ import javax.swing.JMenuItem;
  */
 public class ManejadorSiembras {
 
-    public void cambiarImagenGramaZanahoria(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto, JLabel textoTiempo, JLabel tiempo) {
+    public void cambiarImagenGramaZanahoria(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -31,8 +31,6 @@ public class ManejadorSiembras {
                 ImageIcon iconoMini = new ImageIcon(getClass().getResource("/Imagenes/imagenZanahoria.png"));
                 Zanahoria zanahoria = new Zanahoria(100, 20, "Zanahoria");
                 ManejadorVida manejadorVida = new ManejadorVida(labelVida, zanahoria, zanahoria.getVidaSemilla(), 4);
-                ManejadorVida manejadorCosecha = new ManejadorVida(tiempo, zanahoria, zanahoria.getTiempoCosecha(), 1);
-                textoTiempo.setText("Tiempo para la Cosecha");
                 labelObjeto.setText(zanahoria.getNombreSemilla());
                 labelVida.setText(Integer.toString(zanahoria.getVidaSemilla()));
                 iconoObjeto.setIcon(iconoMini);
@@ -41,7 +39,7 @@ public class ManejadorSiembras {
         });
     }
 
-    public void cambiarImagenGramaManzana(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto, JLabel textoTiempo, JLabel tiempo) {
+    public void cambiarImagenGramaManzana(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -49,8 +47,6 @@ public class ManejadorSiembras {
                 ImageIcon iconoMini = new ImageIcon(getClass().getResource("/Imagenes/imagenManzana.png"));
                 Manzano manzano = new Manzano(100, 30, "Manzano");
                 ManejadorVida manejadorVida = new ManejadorVida(labelVida, manzano, manzano.getVidaSemilla(), 1);
-                ManejadorVida manejadorCosecha = new ManejadorVida(tiempo, manzano, manzano.getTiempoCosecha(), 1);
-                textoTiempo.setText("Tiempo para la Cosecha");
                 labelObjeto.setText(manzano.getNombreSemilla());
                 labelVida.setText(Integer.toString(manzano.getVidaSemilla()));
                 iconoObjeto.setIcon(iconoMini);
@@ -59,7 +55,7 @@ public class ManejadorSiembras {
         });
     }
 
-    public void cambiarImagenGramaTomate(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto, JLabel textoTiempo, JLabel tiempo) {
+    public void cambiarImagenGramaTomate(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -67,8 +63,6 @@ public class ManejadorSiembras {
                 ImageIcon iconoMini = new ImageIcon(getClass().getResource("/Imagenes/imagenTomate.png"));
                 Tomate tomate = new Tomate(100, 50, "Tomate");
                 ManejadorVida manejadorVida = new ManejadorVida(labelVida, tomate, tomate.getVidaSemilla(), 10);
-                ManejadorVida manejadorCosecha = new ManejadorVida(tiempo, tomate, tomate.getTiempoCosecha(), 1);
-                textoTiempo.setText("Tiempo para la Cosecha");
                 labelObjeto.setText(tomate.getNombreSemilla());
                 labelVida.setText(Integer.toString(tomate.getVidaSemilla()));
                 iconoObjeto.setIcon(iconoMini);
@@ -77,7 +71,7 @@ public class ManejadorSiembras {
         });
     }
 
-    public void cambiarImagenGramaMaiz(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto, JLabel textoTiempo, JLabel tiempo) {
+    public void cambiarImagenGramaMaiz(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -85,8 +79,6 @@ public class ManejadorSiembras {
                 ImageIcon iconoMini = new ImageIcon(getClass().getResource("/Imagenes/imagenMaiz.png"));
                 Maiz maiz = new Maiz(100, 40, "Maiz");
                 ManejadorVida manejadorVida = new ManejadorVida(labelVida, maiz, maiz.getVidaSemilla(), 6);
-                ManejadorVida manejadorCosecha = new ManejadorVida(tiempo, maiz, maiz.getTiempoCosecha(), 1);
-                textoTiempo.setText("Tiempo para la Cosecha");
                 labelObjeto.setText(maiz.getNombreSemilla());
                 labelVida.setText(Integer.toString(maiz.getVidaSemilla()));
                 iconoObjeto.setIcon(iconoMini);

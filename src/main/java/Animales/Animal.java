@@ -1,16 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Animales;
 
 /**
- * 
+ *
  * @author Marco Munguia <@markomannder>
  */
 public class Animal {
+
     private int vidaAnimal;
     private int tiempoDeCrianza;
     private String nombreAnimal;
@@ -44,8 +39,5 @@ public class Animal {
     public void setNombreAnimal(String nombreAnimal) {
         this.nombreAnimal = nombreAnimal;
     }
-
-  
-    
 
 }

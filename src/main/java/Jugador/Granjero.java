@@ -1,9 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Jugador;
+
+import Siembra.Maiz;
+import Siembra.Manzano;
+import Siembra.Tomate;
+import Siembra.Zanahoria;
 
 /**
  *
@@ -15,6 +15,10 @@ public class Granjero {
     private int dineroJugador;
     private String nombreJugador;
     private String nicknameJugador;
+    private Manzano manzanasGranjero;
+    private Zanahoria zanahoriasGranjero;
+    private Tomate tomatesGranjero;
+    private Maiz semillasMaiz;
 
     public Granjero(int vidaJugador, int dineroJugador, String nombreJugador, String nicknameJugador) {
         this.vidaJugador = vidaJugador;
@@ -53,6 +57,38 @@ public class Granjero {
 
     public void setNicknameJugador(String nicknameJugador) {
         this.nicknameJugador = nicknameJugador;
+    }
+
+    public Manzano getManzanasGranjero() {
+        return manzanasGranjero;
+    }
+
+    public void setManzanasGranjero(Manzano manzanasGranjero) {
+        this.manzanasGranjero = manzanasGranjero;
+    }
+
+    public Zanahoria getZanahoriasGranjero() {
+        return zanahoriasGranjero;
+    }
+
+    public void setZanahoriasGranjero(Zanahoria zanahoriasGranjero) {
+        this.zanahoriasGranjero = zanahoriasGranjero;
+    }
+
+    public Tomate getTomatesGranjero() {
+        return tomatesGranjero;
+    }
+
+    public void setTomatesGranjero(Tomate tomatesGranjero) {
+        this.tomatesGranjero = tomatesGranjero;
+    }
+
+    public Maiz getSemillasMaiz() {
+        return semillasMaiz;
+    }
+
+    public void setSemillasMaiz(Maiz semillasMaiz) {
+        this.semillasMaiz = semillasMaiz;
     }
 
 }

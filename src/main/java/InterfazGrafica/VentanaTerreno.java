@@ -5,10 +5,13 @@
  */
 package InterfazGrafica;
 
+import Componentes.Bodega;
 import Componentes.Terreno;
 import Jugador.Granjero;
 import ManejadoresControladores.ManejadorDeCeldas;
 import ManejadoresControladores.ManejadorVida;
+import Siembra.Tomate;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,6 +22,7 @@ public class VentanaTerreno extends javax.swing.JFrame {
     private ManejadorDeCeldas manejadorDeCeldas;
     private Terreno terreno;
     private ManejadorVida manejadorVida;
+    private Bodega bodega;
 
     /**
      * Creates new form VentanaTerreno
@@ -33,7 +37,6 @@ public class VentanaTerreno extends javax.swing.JFrame {
         dineroGranjerojLabel.setText(Integer.toString(granjero.getDineroJugador()));
         manejadorVida = new ManejadorVida(vidaGranjerojLabel, granjero, granjero.getVidaJugador(), 2);
         vidaGranjerojLabel.setText(Integer.toString(granjero.getVidaJugador()));
-
     }
 
     /**
@@ -96,7 +99,7 @@ public class VentanaTerreno extends javax.swing.JFrame {
 
         inventariojButton.setBackground(new java.awt.Color(0,0,0,0));
         inventariojButton.setForeground(new java.awt.Color(0, 0, 0));
-        inventariojButton.setText("Inventario");
+        inventariojButton.setText("Bodega");
         inventariojButton.setBorder(null);
         inventarioGranjerojPanel.add(inventariojButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 160, 90, 30));
 
