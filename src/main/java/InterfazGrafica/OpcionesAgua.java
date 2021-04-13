@@ -29,7 +29,7 @@ public class OpcionesAgua extends javax.swing.JFrame {
         initComponents();
         this.setLocation(430, 480);
         ManejadorImagenes manejadorImagenes = new ManejadorImagenes();
-        manejadorImagenes.cambiarImagenAgua(colocarBotejButton, celdaRandom, celdaCliqueada);
+        manejadorImagenes.cambiarImagenAgua(colocarBotejButton, celdaRandom, celdaCliqueada, vidaBotejLabel, botejLabel, imagenBotejLabel);
 
     }
 
@@ -59,10 +59,7 @@ public class OpcionesAgua extends javax.swing.JFrame {
 
         botejLabel.setForeground(new java.awt.Color(0, 0, 0));
         botejLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        botejLabel.setText("Barco 1");
         getContentPane().add(botejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 130, 40));
-
-        imagenBotejLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagenBarco.png"))); // NOI18N
         getContentPane().add(imagenBotejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 40, 40));
 
         imagenVidajLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/imagenVida.png"))); // NOI18N
