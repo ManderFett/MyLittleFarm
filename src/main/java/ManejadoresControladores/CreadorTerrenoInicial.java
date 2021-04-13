@@ -5,11 +5,18 @@ import Celdas.CeldaJButton;
 import Celdas.TipoDeCelda;
 
 /**
+ * Se encarga de creae el terreno inicial para el granjero
  *
  * @author Marco Munguia <@markomannder>
  */
 public class CreadorTerrenoInicial {
 
+    /**
+     * Creara una un arreglo de terreno para que el jugador pueda comenzar a
+     * jugar
+     *
+     * @return retorna la celda que creara
+     */
     public static Celda[][] crearTerrenoInicial() {
         Celda celdaTerreno;
         Celda[][] celda = new Celda[5][5];

@@ -5,6 +5,8 @@ import java.util.logging.Logger;
 import javax.swing.JLabel;
 
 /**
+ * Clase parametrica que repreesenta el hilo de vida de un objeto esta es hoja
+ * de Thread.
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -15,6 +17,14 @@ public class Vida<T> extends Thread {
     private int vidaObjeto;
     private int vidaRestar;
 
+    /**
+     * Crea el hilo de vida del objeto que se le mande como parametro
+     *
+     * @param objeto el objeto que se le asignara el hilo
+     * @param vidaObjetojLabel JLabel donde pondra los puntos de vida
+     * @param vidaObjeto vida del objeto
+     * @param vidaRestar vida que se le restara al objeto
+     */
     public Vida(T objeto, JLabel vidaObjetojLabel, int vidaObjeto, int vidaRestar) {
         this.objeto = objeto;
         this.vidaObjetojLabel = vidaObjetojLabel;
@@ -53,7 +63,6 @@ public class Vida<T> extends Thread {
     public void setVidaRestar(int vidaRestar) {
         this.vidaRestar = vidaRestar;
     }
-    
 
     @Override
     public void run() {
@@ -63,7 +72,6 @@ public class Vida<T> extends Thread {
                 vidaObjeto -= vidaRestar;
                 vidaObjetojLabel.setText(Integer.toString(vidaObjeto));
                 setVidaObjeto(vidaObjeto);
-                System.out.println(vidaObjeto);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Vida.class.getName()).log(Level.SEVERE, null, ex);
             }

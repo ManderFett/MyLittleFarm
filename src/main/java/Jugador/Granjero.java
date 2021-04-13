@@ -6,6 +6,7 @@ import Siembra.Tomate;
 import Siembra.Zanahoria;
 
 /**
+ * Representa al jugador principal que le llamaremos Granjero
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -20,6 +21,14 @@ public class Granjero {
     private Tomate tomatesGranjero;
     private Maiz semillasMaiz;
 
+    /**
+     * Crea al jugador principal con atributos
+     *
+     * @param vidaJugador vida inicial del jugador
+     * @param dineroJugador dinero inicial del jugador
+     * @param nombreJugador nombre inicial del jugador
+     * @param nicknameJugador nickname inicial del jugador
+     */
     public Granjero(int vidaJugador, int dineroJugador, String nombreJugador, String nicknameJugador) {
         this.vidaJugador = vidaJugador;
         this.dineroJugador = dineroJugador;

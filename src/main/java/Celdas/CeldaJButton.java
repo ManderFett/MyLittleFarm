@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Celdas;
 
 import javax.swing.Icon;
@@ -11,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 /**
+ * Representa los botones que usaremos como celda en la generacion del terreno
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -21,6 +17,14 @@ public class CeldaJButton extends JButton {
     private String tipoCelda;
     private Icon icon;
 
+    /**
+     * Crea el boton que se usara como celda con los parametros
+     *
+     * @param numeroFila la posicion en y del boton
+     * @param numeroColumna la posicion en x del boton
+     * @param tipoCelda el tipo de celda que se le asignara
+     * @param icon la imagen que se le asignara al boton
+     */
     public CeldaJButton(int numeroFila, int numeroColumna, String tipoCelda, Icon icon) {
         super(icon);
         this.numeroFila = numeroFila;

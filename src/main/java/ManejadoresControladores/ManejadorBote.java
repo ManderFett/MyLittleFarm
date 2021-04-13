@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ManejadoresControladores;
 
 import Bote.Bote;
@@ -15,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 /**
+ * Se encarga de colocar al bote pesquero en la celda de agua
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -23,7 +19,16 @@ public class ManejadorBote {
     public ManejadorBote() {
     }
 
-    public void cambiarImagenAgua(JButton botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
+    /**
+     * Coloca el bote dependiendo de los parametros
+     * @param botonSeleccionado el boton que se encarga de colocarlo
+     * @param celdaRandom el tipo de celda que se genero
+     * @param celdaCliqueada la celda seleccionada 
+     * @param labelVida JLabel que colocara la vida del bote
+     * @param labelObjeto JLabel que coloca el nombre del bote
+     * @param iconoObjeto JLabel que coloca el icono del bote
+     */
+    public void iniciarBote(JButton botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

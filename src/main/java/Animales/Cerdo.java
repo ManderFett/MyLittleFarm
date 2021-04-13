@@ -1,6 +1,8 @@
 package Animales;
 
 /**
+ * Clase hija de Animal que implementa los metodos de AnimalInterface, esta
+ * representa al Cerdo
  *
  * @author Marco Munguia <@markomannder>
  */

@@ -1,7 +1,7 @@
 package Animales;
 
 /**
- *
+ * Clase hoja de animal que representa a Vaca
  * @author Marco Munguia <@markomannder>
  */
 public class Vaca extends Animal implements AnimalInterface {

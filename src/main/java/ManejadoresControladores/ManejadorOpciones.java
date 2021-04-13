@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ManejadoresControladores;
 
 import Celdas.CeldaJButton;
@@ -13,6 +8,8 @@ import InterfazGrafica.OpcionesGrama;
 import javax.swing.JFrame;
 
 /**
+ * Se encarga de manejar las opciones que arrojara el JFrame asignado a cada
+ * tipo de celda
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -21,6 +18,12 @@ public class ManejadorOpciones {
     public ManejadorOpciones() {
     }
 
+    /**
+     *
+     * @param celdaCliqueada captura la celda cliqueada
+     * @param celdaRandom captura el tipo de celda para hacer una comparacion
+     * @return el JFrame asignado al tipo de celda
+     */
     public JFrame opcionesDeCelda(CeldaJButton celdaCliqueada, TipoDeCelda celdaRandom) {
         switch (celdaCliqueada.getTipoCelda()) {
             case "Grama":

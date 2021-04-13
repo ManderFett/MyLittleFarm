@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Siembra;
 
 import javax.swing.JLabel;
 
 /**
+ * Clase Zanahoria que hereda los atributos de Semilla e implementa los metodos
+ * de la interface SemillaInterface
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -19,7 +16,7 @@ public class Zanahoria extends Semilla implements SemillaInterface {
 
     @Override
     public void vidaSemilla() {
-        
+
     }
 
     @Override
@@ -33,7 +30,5 @@ public class Zanahoria extends Semilla implements SemillaInterface {
     @Override
     public void alimentarSemilla() {
     }
-
-   
 
 }

@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Celdas;
 
 import javax.swing.ImageIcon;
 
 /**
- *
+ * Clase padre que representa de manera global a las celdas del terreno.
  * @author Marco Munguia <@markomannder>
  */
 public class TipoDeCelda {
@@ -16,7 +12,10 @@ public class TipoDeCelda {
     private String nombre;
     private ImageIcon iconoCelda;
     ImageIcon imagenCelda;
-
+    /**
+     * Crea un tipo de celda con referencia de nombre
+     * @param nombre nombre que recibe la celda
+     */
     public TipoDeCelda(String nombre) {
         this.nombre = nombre;
     }

@@ -8,6 +8,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 /**
+ * Se encarga de manejar las probabilidades de cada celda
  *
  * @author Marco Munguia <@markomannder>
  */
@@ -18,6 +19,11 @@ public class ProbabilidadCeldas {
     private Desierto desierto;
     private Icon Imagen;
 
+    /**
+     * Metodo encargado de calcular la probabilidad asignada a cada celda
+     *
+     * @return la el tipo de celda dependiendo de la probabilidad
+     */
     public TipoDeCelda dibujarRandom() {
         double probabilidadCelda = (double) (Math.random());
         if (probabilidadCelda <= 0.25) {
@@ -35,10 +41,10 @@ public class ProbabilidadCeldas {
         }
     }
 
-
     public Icon getImagen() {
         return Imagen;
     }
+
     public void setImagen(ImageIcon imagenCelda) {
         this.Imagen = imagenCelda;
     }

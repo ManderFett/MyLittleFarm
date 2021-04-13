@@ -23,7 +23,7 @@ public class OpcionesAgua extends javax.swing.JFrame {
         initComponents();
         this.setLocation(430, 480);
         ManejadorBote manejadorImagenes = new ManejadorBote();
-        manejadorImagenes.cambiarImagenAgua(colocarBotejButton, celdaRandom, celdaCliqueada, vidaBotejLabel, botejLabel, imagenBotejLabel);
+        manejadorImagenes.iniciarBote(colocarBotejButton, celdaRandom, celdaCliqueada, vidaBotejLabel, botejLabel, imagenBotejLabel);
 
     }
 

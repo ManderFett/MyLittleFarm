@@ -19,14 +19,14 @@ public class OpcionesGrama extends javax.swing.JFrame {
     public OpcionesGrama(CeldaJButton celdaCliqueada, TipoDeCelda tipoDeCelda) {
         initComponents();
         this.setLocation(430, 480);
-        manejadorAnimales.cambiarImagenGramaCerdito(cerditoItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorAnimales.cambiarImagenGramaGallina(galiinaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorAnimales.cambiarImagenGramaOveja(ovejaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorAnimales.cambiarImagenGramaVaca(vacaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorSiembras.cambiarImagenGramaMaiz(maizItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorSiembras.cambiarImagenGramaManzana(manzanaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorSiembras.cambiarImagenGramaTomate(tomateItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
-        manejadorSiembras.cambiarImagenGramaZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorAnimales.iniciarCerdito(cerditoItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorAnimales.iniciarGallina(galiinaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorAnimales.iniciarOveja(ovejaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorAnimales.iniciarVaca(vacaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorSiembras.iniciarMaiz(maizItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorSiembras.iniciarManzano(manzanaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorSiembras.iniciarTomate(tomateItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
+        manejadorSiembras.iniciarZanahoria(zanahoriaItem, tipoDeCelda, celdaCliqueada, vidaObjetojLabel, nombreObjetojLabel, imagenObjerojLabel);
     }
 
     @SuppressWarnings("unchecked")

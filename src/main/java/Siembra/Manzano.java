@@ -1,11 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Siembra;
 
 /**
+ * Clase Manzano que hereda los atributos de Semilla e implementa los metodos de la
+ * interface SemillaInterface
  *
  * @author Marco Munguia <@markomannder>
  */

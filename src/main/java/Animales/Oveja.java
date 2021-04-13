@@ -1,7 +1,8 @@
 package Animales;
 
 /**
- *
+ * Clase hija de Animal que implementa los metodos de la interface
+ * esta clase representa a la Oveja
  * @author Marco Munguia <@markomannder>
  */
 public class Oveja extends Animal implements AnimalInterface {

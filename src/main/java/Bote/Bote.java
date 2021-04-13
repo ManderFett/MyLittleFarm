@@ -1,19 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Bote;
 
 /**
- *
+ * Esta clase representa al bote que se puede colocar en las celdas de agua.
+ * Este tiene un nombre y una vida que nos indicara cuando ya no es factible pescar.
  * @author Marco Munguia <@markomannder>
  */
 public class Bote {
 
     private String nombreBote;
     private int vidaBote;
-
+    /**
+     * Crea el bote que se colocara en la celda de pesca
+     * @param nombreBote nombre que se le dara al bote pesquero
+     * @param vidaBote vida que tendra el bore, esta se reinicia cuando se saca de la celda.
+     */
     public Bote(String nombreBote, int vidaBote) {
         this.nombreBote = nombreBote;
         this.vidaBote = vidaBote;

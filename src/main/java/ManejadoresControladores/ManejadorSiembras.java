@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ManejadoresControladores;
 
 import Celdas.CeldaJButton;
@@ -18,12 +13,23 @@ import javax.swing.JLabel;
 import javax.swing.JMenuItem;
 
 /**
+ * Se encarga de manejar las semillas que queremos plantar en las celdas
  *
  * @author Marco Munguia <@markomannder>
  */
 public class ManejadorSiembras {
 
-    public void cambiarImagenGramaZanahoria(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
+    /**
+     * Se encarga de sembrar la zanahoria en la celda
+     *
+     * @param botonSeleccionado captura la seleccion
+     * @param celdaRandom tipo de celda que se genero
+     * @param celdaCliqueada la celda donde se cliqueo
+     * @param labelVida JLabel que coloca la vida de la siembra
+     * @param labelObjeto JLabel que rrecibe el nombre de la semilla
+     * @param iconoObjeto JLabel donde se cambia la imagen de la semilla
+     */
+    public void iniciarZanahoria(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -39,7 +45,17 @@ public class ManejadorSiembras {
         });
     }
 
-    public void cambiarImagenGramaManzana(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
+    /**
+     * Se encarga de sembrar el manzano en la celda
+     *
+     * @param botonSeleccionado captura la seleccion
+     * @param celdaRandom tipo de celda que se genero
+     * @param celdaCliqueada la celda donde se cliqueo
+     * @param labelVida JLabel que coloca la vida de la siembra
+     * @param labelObjeto JLabel que rrecibe el nombre de la semilla
+     * @param iconoObjeto JLabel donde se cambia la imagen de la semilla
+     */
+    public void iniciarManzano(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -55,7 +71,17 @@ public class ManejadorSiembras {
         });
     }
 
-    public void cambiarImagenGramaTomate(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
+    /**
+     * Se encarga de sembrar el tomate en la celda
+     *
+     * @param botonSeleccionado captura la seleccion
+     * @param celdaRandom tipo de celda que se genero
+     * @param celdaCliqueada la celda donde se cliqueo
+     * @param labelVida JLabel que coloca la vida de la siembra
+     * @param labelObjeto JLabel que rrecibe el nombre de la semilla
+     * @param iconoObjeto JLabel donde se cambia la imagen de la semilla
+     */
+    public void iniciarTomate(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -71,7 +97,17 @@ public class ManejadorSiembras {
         });
     }
 
-    public void cambiarImagenGramaMaiz(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
+    /**
+     * Se encarga de sembrar el maiz en la celda
+     *
+     * @param botonSeleccionado captura la seleccion
+     * @param celdaRandom tipo de celda que se genero
+     * @param celdaCliqueada la celda donde se cliqueo
+     * @param labelVida JLabel que coloca la vida de la siembra
+     * @param labelObjeto JLabel que rrecibe el nombre de la semilla
+     * @param iconoObjeto JLabel donde se cambia la imagen de la semilla
+     */
+    public void iniciarMaiz(JMenuItem botonSeleccionado, TipoDeCelda celdaRandom, CeldaJButton celdaCliqueada, JLabel labelVida, JLabel labelObjeto, JLabel iconoObjeto) {
         botonSeleccionado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

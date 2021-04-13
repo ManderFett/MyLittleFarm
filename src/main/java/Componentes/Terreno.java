@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Componentes;
 
 import Celdas.Celda;
 import ManejadoresControladores.CreadorTerrenoInicial;
 
 /**
- * 
+ * Reepresenta el terreno principal del granjero.
+ *
  * @author Marco Munguia <@markomannder>
  */
 public class Terreno {
+
     private Celda[][] celda;
 
+    /**
+     * Crea el terreno del jugadr.
+     */
     public Terreno() {
         this.celda = CreadorTerrenoInicial.crearTerrenoInicial();
     }
@@ -27,6 +26,5 @@ public class Terreno {
     public void setCelda(Celda[][] celda) {
         this.celda = celda;
     }
-    
 
 }
